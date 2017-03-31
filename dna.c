@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "gfx.h"
+#include "conv.h"
 int main( )
 {
 	printf("This program will compare your DNA string into RNA string.\n\n");
