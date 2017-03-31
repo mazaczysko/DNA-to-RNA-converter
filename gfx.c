@@ -50,3 +50,15 @@ while ( ( c = ( toupper( getchar ( ) ) ) ) != EOF )
 
 return 0;
 }
+
+void ins()
+{
+	int c;
+	printf("Do you want to see instruction?Y/N");
+	if( ( c = tolower( getchar( ) ) ) == 'y' )
+	{
+		printf("\n? - unpossible nucleotide\n\nPossible nucleotides in DNA:\nA - Adenine\nT - Thymine\nC - Cytosine\nG - Guanine\n\nPossible nucleotides in RNA:\nA - Adenine\nU - Uracil\nC - Cytosine\nG - Guanine\n\n");
+	}
+	getchar();
+
+}
