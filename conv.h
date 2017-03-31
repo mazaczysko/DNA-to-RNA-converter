@@ -1,5 +1,5 @@
-#ifndef ALPH_H
-#define ALPH_H
+#ifndef CONV_H
+#define CONV_H
 
 extern int alph();
 extern void ins();
