@@ -3,7 +3,7 @@
 
 int alph()
 {
-int c, out, x, y = 0;
+int c, out, x, len = 0;
 while ( ( c = ( toupper( getchar ( ) ) ) ) != EOF )
 {
 
@@ -11,27 +11,27 @@ while ( ( c = ( toupper( getchar ( ) ) ) ) != EOF )
 	{
 		case 'A':
 			out = 'U',
-			y++;
+			len++;
 			break;
 
 		case 'T':
 			out = 'A',
-			y++;
+			len++;
 			break;
 
 		case 'G':
 			out = 'C',
-			y++;
+			len++;
 			break;
 
 		case 'C':
 			out = 'G';
-			y++;
+			len++;
 			break;
 
 		case '\n':
 			printf("\n");
-			for( x = 0; x < y; x++ )
+			for( x = 0; x < len; x++ )
 				printf("-");
 			printf("\n ^\n |\nThis is your RNA string\n");
 			return 0;
@@ -39,7 +39,7 @@ while ( ( c = ( toupper( getchar ( ) ) ) ) != EOF )
 
 		default:
 			out = '?',
-			y++;
+			len++;
 			break;
 
 	}
