@@ -1,2 +1,2 @@
 all:
-	gcc -o dna dna.c gfx.c -Wall 
+	gcc -o dna dna.c conv.c -Wall 
